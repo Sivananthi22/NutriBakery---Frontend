@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Navbar from '../Navbar';
-import backgroundImage from '/home/sivananthi/Documents/UKI FINAL PROJECT/frontend/src/Components/Images/front03.jpg';
+import backgroundImage from '../Images/front03.jpg';
 import Footer from './Footer';
 
 const OrderSummary = () => {

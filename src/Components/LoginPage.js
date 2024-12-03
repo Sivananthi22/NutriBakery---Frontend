@@ -30,7 +30,7 @@ function LoginPage() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/users/login', {
+      const response = await axios.post('https://nutri-bakery-backend.vercel.app/api/users/login', {
         email,
         password,
       });
@@ -66,7 +66,7 @@ function LoginPage() {
     try {
       const token = localStorage.getItem('authToken');
       await axios.post(
-        'http://localhost:5000/api/cart',
+        'https://nutri-bakery-backend.vercel.app/api/cart',
         { productID: product._id },
         {
           headers: { Authorization: `Bearer ${token}` },
@@ -83,7 +83,7 @@ function LoginPage() {
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/users/signup', {
+      await axios.post('https://nutri-bakery-backend.vercel.app/api/users/signup', {
         username,
         email,
         password,
